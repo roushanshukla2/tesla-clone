@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+nav#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background-color: #fff;
+    height: 60px;
+    position: relative;
+    z-index: 10;
+}
+
+.logo img {
+    width: 130px;
+    height: auto;
+}
+
+.navList {
+    display: flex;
+    gap: 30px;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+
+/* Toggle checkbox */
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Sidebar menu */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    padding: 30px 20px;
+    transition: right 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#menu-toggle:checked~.side-menu {
+    right: 0;
+}
+
+.close-btn {
+    text-align: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.side-menu ul {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.side-menu li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.side-menu li a:hover {
+    background-color: #d4c7c7;
+}
+
+.side-footer {
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.globe {
+    margin-right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .navList,
+    .icons {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+.footer-sticky {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+}
+
+.drive-btn {
+    display: flex;
+    gap: 10px;
+    padding: 10px 10px;
+    margin: 10px;
+    background-color: #F4F4F4;
+    color: #111827;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.drive-btn img {
+    width: 20px;
+    height: auto;
+
+}
+
+
+.product-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    width: 100%;
+    height: auto;
+}
+
+/* Product banner */
+.product-banner .product{
+    width: 100%;
+    height: 100vh;   
+    scale: 1.2;
+    object-fit: cover;
+    
+}
