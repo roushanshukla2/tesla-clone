@@ -35,4 +35,4 @@ To run this project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/tesla-clone.git
+   git clone https://github.com/roushanshukla2/tesla-clone.git
