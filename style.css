@@ -7,6 +7,8 @@
 body {
     font-family: Arial, sans-serif;
     padding-bottom: 80px;
+    font-size: 14px;
+    /* font-weight: bold; */
 }
 
 a {
@@ -40,6 +42,136 @@ nav#navbar {
     gap: 30px;
 }
 
+
+/* vehicle hover style */
+.dropdown-menu {
+    display: none;
+    /* border: solid 1px rgb(235, 0, 0); */
+    background-color: #fff;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    top: 38px;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    padding-top: 10px;
+    /* padding: 70px 0; */
+}
+
+
+.product-menu {
+    margin-left: 10%;
+    /* border: solid 6px #241274; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    min-height: 100%;
+    flex-grow: 1;
+    
+
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #f9f9f9;
+    flex-shrink: 0;
+    min-height: 215px;
+
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    min-width: 230px;
+    border-radius: 10px;
+    display: block;
+   
+}
+
+.product-item>p {
+    margin: 5px 0;
+    font-size: 17px;
+    font-weight: bold;
+    color: #171A20;
+}
+
+.btns {
+    display: flex;
+ 
+    gap: 10px;
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 200;
+    color: #5C5E62;
+
+}
+
+.vl {
+    border-left: 1px solid #d0d1d2;
+
+    height: auto;
+    min-height: 400px;
+    margin: 0 40px;
+}
+
+
+
+.content-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 350px;   
+    /* border: solid 6px #241274; */
+   
+}
+
+
+
+.content-menu ul li {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    /* padding: 10px 0; */
+}
+
+.content-menu ul li a {
+    font-size: 16px;
+    font-weight: bold;  
+    color: #171A20;
+    transition: color 0.3s;
+}
+
+.content-menu ul li a:hover {
+    text-decoration: underline;
+    color: #5C5E62;
+}
+
+/* discovery */
+.center{
+    justify-content: space-between;
+    text-align: start;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.dropdown:hover .dropdown-menu,.dropdown-menu:hover {
+    display: flex;
+    /* display: none; */
+}
+
+
+
+/* ends here */
+
+
 .icons {
     display: flex;
     gap: 20px;
@@ -53,9 +185,13 @@ nav#navbar {
 
 .menu-icon {
     display: none;
-    font-size: 24px;
+    
     cursor: pointer;
-    user-select: none;
+    padding: 10px;
+    background-color: #edf0ed;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 /* Sidebar menu */
@@ -97,6 +233,7 @@ nav#navbar {
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
+    
 }
 
 .side-menu li a:hover {
@@ -114,7 +251,7 @@ nav#navbar {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 1456px) {
 
     .navList,
     .icons {
@@ -124,10 +261,28 @@ nav#navbar {
     .menu-icon {
         display: block;
     }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .hidden {
+        display: none;
+    }
+
+
 }
 
 
-
+.center{
+    justify-content: space-between;
+    text-align: start;
+    margin: 0 auto;
+    padding: 20px 0;
+}
 
 .product-banner{
     position: relative;
@@ -175,7 +330,7 @@ nav#navbar {
 }
 .banner-buttons .btn{
     display: inline-block;
-    width: 15%;
+    /* width: 15%; */
     padding: 10px 20px;
     margin: 10px 0;
     font-size: 18px;
@@ -187,10 +342,12 @@ nav#navbar {
     min-height:fit-content;
 }
 .btn-down{
+    
     position: absolute;
-    bottom: 10px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
+    
 }
 .banner-buttons .btn-blue{
     background-color: #007bff;
@@ -203,34 +360,30 @@ nav#navbar {
 }
 
 
+footer{
+    width: 100%;
 
-/* Footer */
-footer.footer {
-    background-color: #fff;
-    padding: 40px 20px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    color: #333;
-    text-align: center;
 }
 
 .footer-content {
-    max-width: 800px;
+    text-align: center;
+    max-width: 700px;
     margin: 0 auto 30px auto;
     line-height: 1.6;
-}
+} 
 
 .footer-links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-}
+} 
 
 .footer-links a {
     text-decoration: none;
-    color: #555;
-}
+    font-weight:550;
+    color: #5C5E62;
+} 
 
 
 
