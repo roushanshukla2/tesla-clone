@@ -13,7 +13,7 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: bold;
 }
 
@@ -22,14 +22,19 @@ ul {
 }
 
 nav#navbar {
+
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
-    background-color: #fff;
+    /* background-color: #fff; */
     height: 60px;
-    position: relative;
     z-index: 10;
+    /* border: solid; */
 }
 
 .logo img {
@@ -38,6 +43,7 @@ nav#navbar {
 }
 
 .navList {
+    color: #d0d1d2;
     display: flex;
     gap: 30px;
 }
@@ -46,7 +52,7 @@ nav#navbar {
 /* vehicle hover style */
 .dropdown-menu {
     display: none;
-    /* border: solid 1px rgb(235, 0, 0); */
+    /* border: solid 3px rgb(235, 0, 0); */
     background-color: #fff;
     /* justify-content: space-evenly; */
     align-items: center;
@@ -294,13 +300,80 @@ nav#navbar {
     overflow: hidden;
 }
 
-/* Product banner */
-.product-banner .product{
+
+
+
+/* Background image only via CSS */
+.model-y-2 {
+    background-image: url('./Image/Model-y-2.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
     width: 100%;
-    height: 90vh;   
-    
-    scale: 1.1;
-    object-fit: cover;
+    position: relative;
+}
+
+
+.model-3 {
+    background-image: url('./Image/Model-3.avif');
+    background-size: cover;
+    background-position: center;
+}
+
+.cybertruck {
+    background-image: url('./Image/Cybertruck-Hero.avif');
+    background-size: cover;
+    background-position: center;
+}
+.model-x {
+    background-image: url('./Image/Model-X.avif');
+    background-size: cover;
+    background-position: center;
+}
+
+.model-s {
+    background-image: url('./Image/Model-S.avif');
+    background-size: cover;
+    background-position: center;
+}
+
+.solar-panels {
+    background-image: url('./Image/SolarPanels.avif');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.solar-roof {
+    background-image: url('./Image/SolarRoof.avif');
+    background-size: cover;
+    background-position: center;
+}
+
+.powerwall {
+    background-image: url('./Image/Powerwall.avif');
+    background-size: cover;
+    background-position: center;
+}
+
+.accessories {
+    background-image: url('./Image/Accessories.avif');
+    background-size: cover;
+    background-position: center;
+}
+
+/* shared styles already in your CSS */
+.product-banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     
 }
 
@@ -421,3 +494,6 @@ footer{
     height: auto;
 
 }
+
+
+
